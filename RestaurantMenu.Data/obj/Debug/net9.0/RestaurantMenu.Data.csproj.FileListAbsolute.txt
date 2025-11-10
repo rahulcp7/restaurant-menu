@@ -10,3 +10,4 @@
 /Users/rahulcp/Projects/RestaurantMenu/RestaurantMenu.Data/obj/Debug/net9.0/RestaurantMenu.Data.pdb
 /Users/rahulcp/Projects/RestaurantMenu/RestaurantMenu.Data/obj/Debug/net9.0/ref/RestaurantMenu.Data.dll
 /Users/rahulcp/Projects/RestaurantMenu/RestaurantMenu.Data/obj/Debug/net9.0/RestaurantMenu.Data.csproj.AssemblyReference.cache
+/Users/rahulcp/Projects/RestaurantMenu/RestaurantMenu.Data/obj/Debug/net9.0/RestaurantMenu.Data.sourcelink.json

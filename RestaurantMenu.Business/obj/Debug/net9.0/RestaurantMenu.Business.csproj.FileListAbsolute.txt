@@ -13,3 +13,4 @@
 /Users/rahulcp/Projects/RestaurantMenu/RestaurantMenu.Business/obj/Debug/net9.0/refint/RestaurantMenu.Business.dll
 /Users/rahulcp/Projects/RestaurantMenu/RestaurantMenu.Business/obj/Debug/net9.0/RestaurantMenu.Business.pdb
 /Users/rahulcp/Projects/RestaurantMenu/RestaurantMenu.Business/obj/Debug/net9.0/ref/RestaurantMenu.Business.dll
+/Users/rahulcp/Projects/RestaurantMenu/RestaurantMenu.Business/obj/Debug/net9.0/RestaurantMenu.Business.sourcelink.json
