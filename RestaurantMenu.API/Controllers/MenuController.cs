@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using RestaurantMenu.API.Models;
-using RestaurantMenu.API.Services;
+using RestaurantMenu.Data.Entities;
+using RestaurantMenu.Business.Services;
 
 namespace RestaurantMenu.API.Controllers
 {
@@ -28,5 +28,27 @@ namespace RestaurantMenu.API.Controllers
             await _menuService.CreateAsync(item);
             return CreatedAtAction(nameof(GetAll), new {id = item.Id},item);
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(string id, MenuItem item)
+        {
+            var existing = await _menuService.GetByIdAsync(id);
+            if(existing == null)
+                return NotFound($"Menu item with ID {id} not found.");
+            item.Id = id;
+            await _menuService.UpdateAsync(id, item);
+            return Ok(item);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            var existing = await _menuService.GetByIdAsync(id);
+            if (existing==null)
+                return NotFound($"Menu item with ID {id} not found.");
+            await _menuService.DeleteAsync(id);
+            return NoContent();
+        }
+
     }
 }

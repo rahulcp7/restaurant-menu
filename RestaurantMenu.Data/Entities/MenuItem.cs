@@ -1,14 +1,11 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using RestaurantMenu.Data.Entities;
 
-namespace RestaurantMenu.API.Models
+namespace RestaurantMenu.Data.Entities
 {
-    public class MenuItem
+    public class MenuItem : BaseEntity
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id {get;set;}
-
         public string Name {get;set;} = string.Empty;
         public string Description {get;set;} = string.Empty;
         public decimal Price {get;set;}
